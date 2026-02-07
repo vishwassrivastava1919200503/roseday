@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Rose Day ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:'Segoe UI',sans-serif;
+    color:white;
+    text-align:center;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    padding:40px;
+    border-radius:20px;
+    max-width:420px;
+}
+
+h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    font-size:1rem;
+    background:#ff4d6d;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ff1e4d;
+}
+
+#reveal{
+    display:none;
+    margin-top:25px;
+}
+
+#reveal img{
+    width:100%;
+    border-radius:15px;
+    animation:fadeIn 1s ease;
+}
+
+#reveal p{
+    margin-top:15px;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(0.9);}
+    to{opacity:1; transform:scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Happy Rose Day 🌹</h1>
+    <p>My baby ❤️</p>
+
+    <button onclick="showRose()">You want to see the rose? 😉</button>
+
+    <div id="reveal">
+        <img src="mybaby.jpeg" alt="My Baby">
+        <p>fuck rose, you are more beautiful than that 💖</p>
+    </div>
+</div>
+
+<script>
+function showRose(){
+    document.getElementById("reveal").style.display="block";
+}
+</script>
+
+</body>
+</html>
+
